@@ -1,0 +1,50 @@
+// The unbranded stylesheet is used if you need to create pages in your
+// prototype without the GOV.UK branding.
+//
+// See localhost:3000/docs/templates/blank-unbranded
+
+// Import settings first so we can override them before importing all of GOV.UK Frontend
+// If you need to enable compatibility mode or the legacy palette, do that *before* this import.
+// @import "node_modules/govuk-frontend/govuk/settings/all";
+// The order we import settings in is important, as some settings files rely on
+// others
+
+@import "node_modules/govuk-frontend/govuk/settings/assets";
+
+@import "node_modules/govuk-frontend/govuk/settings/compatibility";
+@import "node_modules/govuk-frontend/govuk/settings/global-styles";
+@import "node_modules/govuk-frontend/govuk/settings/ie8";
+
+@import "node_modules/govuk-frontend/govuk/settings/media-queries";
+
+@import "node_modules/govuk-frontend/govuk/settings/colours-palette";
+@import "./colours";
+@import "node_modules/govuk-frontend/govuk/settings/colours-organisations";
+@import "node_modules/govuk-frontend/govuk/settings/colours-applied";
+
+@import "node_modules/govuk-frontend/govuk/settings/spacing";
+@import "node_modules/govuk-frontend/govuk/settings/measurements";
+
+@import "node_modules/govuk-frontend/govuk/settings/typography-font-families";
+@import "node_modules/govuk-frontend/govuk/settings/typography-font";
+@import "node_modules/govuk-frontend/govuk/settings/typography-responsive";
+@import "./components/links";
+
+// Override the default GOV.UK Frontend font stack
+@font-face {
+  font-family: "MarquisWeb";
+  font-style: normal;
+  src: url("/public/fonts/MarquisWeb-Regular.woff2") format("woff2"),
+       url("/public/fonts/MarquisWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MarquisWeb";
+  font-style: italic;
+  src: url("/public/fonts/MarquisWeb-Oblique.woff2") format("woff2"),
+       url("/public/fonts/MarquisWeb-Oblique.woff") format("woff");
+}
+
+$govuk-font-family: "MarquisWeb", "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+
+@import "application";

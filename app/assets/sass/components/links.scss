@@ -1,0 +1,32 @@
+a { 
+  color: govuk-colour('text'); 
+  text-decoration: underline; 
+  text-decoration-color: $border; 
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 0.5px;
+}
+a:hover {
+  color: govuk-colour('light-blue');
+  text-decoration: underline;
+  text-decoration-color: govuk-colour('light-blue');
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+a:focus {
+  color: govuk-colour('light-yellow'); 
+  background: govuk-colour('light-blue'); 
+  outline: 0.3em solid govuk-colour('light-blue');
+  text-decoration: underline;
+  text-decoration-color: govuk-colour('light-yellow');
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+} 
+a:active {
+  color: govuk-colour('light-blue');         
+  background: govuk-colour('light-yellow');
+  outline: 0.3em solid govuk-colour('light-yellow'); 
+  text-decoration: underline; 
+  text-decoration-color: govuk-colour('light-blue'); 
+  text-underline-offset: 0.2em; 
+  text-decoration-thickness: 1px; 
+} 

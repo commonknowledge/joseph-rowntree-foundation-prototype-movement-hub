@@ -1,0 +1,39 @@
+$jrf-colour-page: #FAFAFA;
+$jrf-colour-text: #222222;
+$jrf-colour-border: #2F3130;
+$jrf-colour-green-highlight: #BEC4A0;
+$jrf-colour-yellow-highlight: #F5D800;
+$jrf-colour-red-highlight: #C94E3E;
+$jrf-colour-blue-highlight: #2C2264;
+$jrf-colour-red-shade: #F2B7B1;
+$jrf-colour-yellow-shade: #F7F1C1;
+$jrf-colour-green-shade: #D6DAC6;
+$jrf-colour-blue-shade: #DAD6F0;
+
+$govuk-colours: (
+  "red": $jrf-colour-red-highlight,
+  "yellow": $jrf-colour-yellow-highlight,
+  "green": #00703c,
+  "blue": #1d70b8,
+  "dark-blue": $jrf-colour-blue-highlight,
+  "light-blue": #5694ca,
+  "purple": #4c2c92,
+
+  "black": $jrf-colour-text,
+  "dark-grey": #505a5f,
+  "mid-grey": #b1b4b6,
+  "light-grey": $jrf-colour-page,
+  "white": #ffffff,
+
+  "light-purple": $jrf-colour-blue-shade,
+  "bright-purple": #912b88,
+  "pink": #d53880,
+  "light-pink": $jrf-colour-red-shade,
+  "orange": #f47738,
+  "brown": #b58840,
+  "light-green": $jrf-colour-green-highlight,
+  "turquoise": #28a197
+);
+
+// Override the canvas background colour, which is normally grey to blend with the GOV.UK footer.
+$govuk-canvas-background-colour: $jrf-colour-page;
