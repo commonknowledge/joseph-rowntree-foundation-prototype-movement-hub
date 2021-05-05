@@ -1,6 +1,7 @@
 
 {% extends "layout_unbranded.html" %}
-{% from "govuk/components/tag/macro.njk"                 import govukTag %}
+{% from "govuk/components/tag/macro.njk" import govukTag %}
+{% from "./includes/quote.njk" import quote %}
 
 {% block pageTitle %}
   JRF Prototype Kit
@@ -14,7 +15,13 @@
         JRF
         <span class="govuk-caption-xl">{{releaseVersion}}</span>
       </h1>{{releaseVersion | log }}
-      <a href='https://google.com'>Test me</a>
+      {{ quote({
+        value: "Hey Sonia!"
+      }) }}
+
+      {{ for d in data }}
+        funkyDataVisTemplate({ data: d })
+      {{ }}
       <!-- <p>
         This kit lets you rapidly create HTML prototypes of GOV.UK services.
       </p>
