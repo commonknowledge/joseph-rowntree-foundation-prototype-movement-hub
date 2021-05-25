@@ -48,14 +48,7 @@
     "require-dir": "^1.0.0",
     "sync-request": "^6.0.0",
     "universal-analytics": "^0.4.16",
-    "uuid": "^7.0.3"
-  },
-  "greenkeeper": {
-    "ignore": [
-      "nunjucks"
-    ]
-  },
-  "devDependencies": {
+    "uuid": "^7.0.3",
     "autoprefixer": "^10.2.5",
     "glob": "^7.1.4",
     "jest": "^25.2.7",
@@ -64,5 +57,10 @@
     "standard": "^14.3.3",
     "supertest": "^4.0.2",
     "tailwindcss": "^2.1.2"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "nunjucks"
+    ]
   }
 }
