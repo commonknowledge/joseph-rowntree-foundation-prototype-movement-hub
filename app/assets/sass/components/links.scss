@@ -1,32 +1,32 @@
 a { 
-  color: govuk-colour('text'); 
+  color: theme('colors.text'); 
   text-decoration: underline; 
-  text-decoration-color: $border; 
+  text-decoration-color: theme('colors.border'); 
   text-underline-offset: 0.2em;
   text-decoration-thickness: 0.5px;
 }
 a:hover {
-  color: govuk-colour('light-blue');
+  color: theme('colors.blueLight');
   text-decoration: underline;
-  text-decoration-color: govuk-colour('light-blue');
+  text-decoration-color: theme('colors.blueLight');
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
 }
 a:focus {
-  color: govuk-colour('light-yellow'); 
-  background: govuk-colour('light-blue'); 
-  outline: 0.3em solid govuk-colour('light-blue');
+  color: theme('colors.yellowLight'); 
+  background: theme('colors.blueLight'); 
+  outline: 0.3em solid theme('colors.blueLight');
   text-decoration: underline;
-  text-decoration-color: govuk-colour('light-yellow');
+  text-decoration-color: theme('colors.yellowLight');
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
 } 
 a:active {
-  color: govuk-colour('light-blue');         
-  background: govuk-colour('light-yellow');
-  outline: 0.3em solid govuk-colour('light-yellow'); 
+  color: theme('colors.blueLight');         
+  background: theme('colors.yellowLight');
+  outline: 0.3em solid theme('colors.yellowLight'); 
   text-decoration: underline; 
-  text-decoration-color: govuk-colour('light-blue'); 
+  text-decoration-color: theme('colors.blueLight'); 
   text-underline-offset: 0.2em; 
   text-decoration-thickness: 1px; 
 } 
