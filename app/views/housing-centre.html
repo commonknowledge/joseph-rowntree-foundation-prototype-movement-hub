@@ -1,0 +1,318 @@
+
+{% extends "layout_unbranded.html" %}
+{% from "govuk/components/tag/macro.njk"                 import govukTag %}
+
+{% block pageTitle %}
+  JRF Prototype
+{% endblock %}
+
+{% block content %}
+
+<!-- Header -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Housing and poverty
+      </h1>
+      <p class="govuk-body">Rises in housing have increased the cost of living, particularly for people in poverty. Few people, when they think about it, blame personal choice as the sole cause of poverty. They understand that the quality of local jobs, the cost of housing, and welfare reforms matter too.</p>
+      <p class="govuk-body"><a href="">Get involved</a></p>
+    </div>
+  </div>
+
+<!-- Summary -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-l">
+        Summary
+      </h2>
+      <p class="govuk-body">Government housing support helps to reduce poverty and its effects, but it is not always enough. Rising housing costs can trap people in poverty, unable to move for work or pay their rent without support.</p>
+      <p class="govuk-body">To use housing to solve UK poverty we must:</p>
+      <ol>
+        <li>Increase the housing supply to 200,000 units a year by 2040.</li>
+        <li>Make sure the proportion of social rented housing does not decrease.</li>
+        <li>Stop social rents from rising to match private rents.</li>
+        <li>Bring forward the Renters’ Reform Bill and end No Fault evictions.</li>
+      </ol>
+
+      <button class="govuk-button">Read all recommendations</button> 
+      
+    </div>
+    <div class="govuk-grid-column-one-third">
+      
+    </div>
+  </div>
+
+<!-- Network -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-l">
+        Network
+      </h2>
+      <p class="govuk-body">Connect, learn and collaborate with people working to achieve housing justice in the UK. Use our network to find tenant unions, think tanks, grassroots campaigners and more.</p>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="event-name">
+            Search by postcode
+          </label>
+        <input class="govuk-input" id="postcode-search" name="postcode-search" type="text">
+      </div>
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--s hidden">Network</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Organisation</th>
+            <th scope="col" class="govuk-table__header">Type</th>
+            <th scope="col" class="govuk-table__header">Location</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href="">Acorn</a></th>
+            <td class="govuk-table__cell">Community union</td>
+            <td class="govuk-table__cell">Brighton</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href=""></a>Housing Justice</a></th>
+            <td class="govuk-table__cell">Charity</td>
+            <td class="govuk-table__cell">Manchester</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header"><a href=""></a>London Renters Union</a></th>
+            <td class="govuk-table__cell">Tenent Union</td>
+            <td class="govuk-table__cell">Coalition</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button class="govuk-button">Explore the network</button> 
+      
+    </div>
+    <div class="govuk-grid-column-one-third">
+      
+    </div>
+  </div>
+
+<!-- Projects -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-l">
+        Featured projects
+      </h2>
+      <p class="govuk-body">We work with people who have experienced poverty and the UK housing system. We co-design campaigns and policy recommendations to create solutions that work for the people that need them.</p> 
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-s">
+        Build, build, build social housing
+      </h3>
+      <p class="govuk-body">Building social housing can stimulate our economy and make the housing market work for low-income households. The best thing we can do for our recovery is to make sure we have enough social housing for those who need it most.</p>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-s">
+        Give Poverty A Voice
+      </h3>
+      <p class="govuk-body">ATD Fourth World’s Giving Poverty a Voice project strives to support people experiencing poverty and inequality inLondon to engage and participate in their communities and have their say on the decisions that affect their lives. The project also seeks to build networks with grassroots and community.</p>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <h3 class="govuk-heading-s">
+        Renters Reform Coalition
+      </h3>
+      <p class="govuk-body">We have joined 19 other charities, think-tanks, housing and renter organisations to form the Renters' Reform Coalition. We are united in our mission to reform the private rented sector so that everyone who relies on it for their home can prosper.</p>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <button class="govuk-button">View more projects</button> 
+    </div>
+  </div>
+
+<!-- Get involved -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l">
+      Get involved
+    </h2>
+    <p class="govuk-body">Achieving housing justice and ending poverty is possible. Take action to keep learning, stay updated and build connections.</p> 
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h3 class="govuk-heading-m">Join the online community</h3>
+    <p class="govuk-body">Get advice, share information, and find solutions. Meet other people who are solving poverty through housing.</p>
+    
+    <h3 class="govuk-heading-m">Work with us</h3>
+    <p class="govuk-body">Build on our joint experience and expertise. We can support you to do more.</p>
+
+    <h3 class="govuk-heading-m">Sign up to the newsletter</h3>
+    <p class="govuk-body">Stay up to date on the latest research, partner stories, events and training.</p>
+  </div>
+</div>
+
+
+<!-- All content -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--l"><h2>All content on Housing</h2></caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header hidden">Title, topic or author</th>
+          <th scope="col" class="govuk-table__header hidden">Content type</th>
+          <th scope="col" class="govuk-table__header hidden">Date</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">UK Poverty 2019/20: Housing</a></th>
+          <td class="govuk-table__cell">Report</td>
+          <td class="govuk-table__cell">13 May 2021</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Laying the foundations for a Scotland without poverty</th>
+          <td class="govuk-table__cell">Dataset</td>
+          <td class="govuk-table__cell">10 February  2021</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Struggling renters need a lifeline this winter</th>
+          <td class="govuk-table__cell">Story</td>
+          <td class="govuk-table__cell">5 January 2021</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Build, build, build social housing</th>
+          <td class="govuk-table__cell">Report</td>
+          <td class="govuk-table__cell">5 December 2020</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Reporting poverty: a guide for media professionals</th>
+          <td class="govuk-table__cell">Resource</td>
+          <td class="govuk-table__cell">12 November 2020</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">UK Poverty 2019/20: Housing</th>
+          <td class="govuk-table__cell">Report</td>
+          <td class="govuk-table__cell">13 May 2021</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Laying the foundations for a Scotland without poverty</th>
+          <td class="govuk-table__cell">Dataset</td>
+          <td class="govuk-table__cell">10 February  2021</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Struggling renters need a lifeline this winter</th>
+          <td class="govuk-table__cell">Story</td>
+          <td class="govuk-table__cell">5 January 2021</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Build, build, build social housing</th>
+          <td class="govuk-table__cell">Report</td>
+          <td class="govuk-table__cell">5 December 2020</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Reporting poverty: a guide for media professionals</th>
+          <td class="govuk-table__cell">Resource</td>
+          <td class="govuk-table__cell">12 November 2020</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Team -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l">
+      Team
+    </h2>
+    <p class="govuk-body">We are housing and poverty experts. We want to work with action groups and people with lived experience of poverty to learn more and support your work.</p> 
+
+    <p>Talk to us about:</p>
+
+    <ul>
+      <li>Designing policy recommendations and campaigns </li>
+      <li>Funding or supporting your organisation</li>
+      <li>Framing your housing, homelessness and poverty messages.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-!-display-inline">
+      <h3 class="govuk-heading-s">Rachelle Earwaker</h3>
+      <p>Economist</p>
+      <p>
+        My work focuses on decent and affordable housing. I previously worked as an analyst at the New Zealand Treasury, where I coordinated the Budgets. This included implementing the first Wellbeing Budget in 2019.
+      </p>
+      <p>Talk to me about:</p>
+      <ul>
+        <li>affordable housing</li>
+        <li>social housing</li>
+      </ul>
+      <button class="govuk-button govuk-button--secondary">Book a meeting</button>
+    </div>
+    <div class="govuk-!-display-inline-block">
+      <h3 class="govuk-heading-s">Tony McKenzie</h3>
+      <p>Senior Participation Officer</p>
+      <p>
+        I lead on our participatory co-design processes and collaborations. I develop policy solutions with the help of people with direct experience of poverty.
+      </p>
+      <p>Talk to me about:</p>
+      <ul>
+        <li>citizen science</li>
+        <li>co-designing solutions</li>
+        <li>policy solutions</li>
+
+        <button class="govuk-button govuk-button--secondary">Book a meeting</button>
+      </ul>
+    </div>
+    <div class="govuk-!-display-inline-block">
+      <h3 class="govuk-heading-s">Rachel Casey</h3>
+      <p>Housing Policy Officer</p>
+      <p>
+        I work on development of housing policy at JRF. I develop collaborative solutions and partnerships to ensure more people live in a decent, affordable home.
+      </p>
+      <p>Talk to me about:</p>
+      <ul>
+        <li>housing policy</li>
+        <li>co-design partnerships</li>
+        <li>homelessness</li>
+
+        <button class="govuk-button govuk-button--secondary">Book a meeting</button>
+      </ul>
+    </div>
+    <div class="govuk-!-display-inline-block">
+      <h3 class="govuk-heading-s">Darren Baxter</h3>
+      <p>Housing Policy Manager</p>
+      <p>
+        I lead the development of housing policy at JRF. We develop solutions and partnerships to ensure more people live in a decent, affordable home. 
+      </p>
+      <p>Talk to me about:</p>
+      <ul>
+        <li>housing policy</li>
+        <li>partnerships</li>
+        <li>research</li>
+
+        <button class="govuk-button govuk-button--secondary">Book a meeting</button>
+      </ul>
+    </div>
+    <div class="govuk-!-display-inline-block">
+      <h3 class="govuk-heading-s">Camille Furtado</h3>
+      <p>UK Poverty Campaigns Manager</p>
+      <p>
+        I lead on our work with people who have direct experience of poverty, from communities across the UK. My role involves strengthening grassroots-led advocacy and campaign work.
+      </p>
+      <p>Talk to me about:</p>
+      <ul>
+        <li>grassroots-led advocacy</li>
+        <li>community organising</li>
+        <li>human rights</li>
+
+        <button class="govuk-button govuk-button--secondary">Book a meeting</button>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

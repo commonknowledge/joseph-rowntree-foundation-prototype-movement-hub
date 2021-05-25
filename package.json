@@ -14,7 +14,6 @@
   "dependencies": {
     "acorn": "^7.1.1",
     "ansi-colors": "^4.1.1",
-    "autoprefixer": "^10.2.5",
     "basic-auth": "^2.0.0",
     "basic-auth-connect": "^1.0.0",
     "body-parser": "^1.14.1",
@@ -48,7 +47,6 @@
     "postcss-scss": "^3.0.5",
     "require-dir": "^1.0.0",
     "sync-request": "^6.0.0",
-    "tailwindcss": "^2.1.2",
     "universal-analytics": "^0.4.16",
     "uuid": "^7.0.3"
   },
@@ -58,10 +56,13 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
     "glob": "^7.1.4",
     "jest": "^25.2.7",
     "node-sass": "^4.14.1",
+    "postcss": "^8.3.0",
     "standard": "^14.3.3",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "tailwindcss": "^2.1.2"
   }
 }
