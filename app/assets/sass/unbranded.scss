@@ -48,3 +48,7 @@
 $govuk-font-family: "MarquisWeb", "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
 
 @import "application";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
