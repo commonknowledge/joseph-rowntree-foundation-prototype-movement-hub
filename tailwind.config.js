@@ -11,6 +11,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        marquis: '"MarquisWeb", "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif'
+      },
       colors: {
         text: "#222222",
         border: "#2F3130",
