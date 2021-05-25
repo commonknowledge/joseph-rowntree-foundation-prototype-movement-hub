@@ -28,6 +28,7 @@
 @import "node_modules/govuk-frontend/govuk/settings/typography-font-families";
 @import "node_modules/govuk-frontend/govuk/settings/typography-font";
 @import "node_modules/govuk-frontend/govuk/settings/typography-responsive";
+
 @import "./components/links";
 
 // Override the default GOV.UK Frontend font stack
@@ -52,3 +53,31 @@ $govuk-font-family: "MarquisWeb", "HelveticaNeue", "Helvetica Neue", "Arial", "H
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body,
+html {
+  @apply antialiased text-body font-marquis bg-pageWhite;
+}
+
+.govuk-heading-xl,
+.govuk-heading-l {
+  font-weight: normal !important;
+}
+
+.govuk-main-wrapper {
+  padding: 0 !important;
+}
+
+.govuk-width-container  {
+  width: 100% !important;
+  margin: 0 auto !important;
+  max-width: none !important;
+}
+
+@layer components {
+  @responsive {
+    .grid-template-40x60 {
+      grid-template-columns: 40% 60%;
+    }
+  }
+}
