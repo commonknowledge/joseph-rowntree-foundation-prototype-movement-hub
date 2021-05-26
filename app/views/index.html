@@ -8,21 +8,21 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        JRF prototype
-      </h1>
+<div class="px-8 md:grid grid-template-40x60 gap-4">
+  <div class="flex flex-col min-h-75vh w-100 pb-4">
 
-      <h2>Pages</h2>
-
+    <div class="flex-grow flex align-middle">
+      <h1 class='inline-block block govuk-heading-xl my-6'>JRF Prototype</h1>
+    </div>      
+    <section class='space-y-2 mb-8'>
+      <h2 class="govuk-heading-s">Pages</h2>
       <ul>
-        <li><a href="housing-centre.html">Housing centre</a></li>
-        <li><a href=""></a>Network</a></li>
-        <li><a href=""></a>Collaboration</a></li>
+        <li>
+        <a href="/housing-centre">Housing centre</a>
+        <li>
       </ul>
-      
-    </div>
+    </section>
   </div>
+</div>
 
 {% endblock %}
