@@ -7,7 +7,7 @@
   vertical-align: top;
   cursor: pointer;
 
-  button:hover {
+  &:hover {
     @apply text-pageWhite bg-blueBright;
   }
 }
@@ -20,8 +20,8 @@
   text-align: center;
   vertical-align: top;
   cursor: pointer;
-  
-  button:hover {
+
+  &:hover {
     @apply text-pageWhite bg-blueBright;
   }
 }
