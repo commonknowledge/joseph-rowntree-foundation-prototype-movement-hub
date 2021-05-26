@@ -19,13 +19,13 @@
         <h1 class='inline-block block govuk-heading-xl my-6'>Housing and poverty</h1>
       </div>
       <section class='mt-auto'>
-        <p class="">Rises in housing have increased the cost of living, particularly for people in poverty. Few people, when they think about it, blame personal choice as the sole cause of poverty. They understand that the quality of local jobs, the cost of housing, and welfare reforms matter too.</p>
+        <p class="">Rises in housing have <a href="">increased the cost of living</a>, particularly for people in poverty. Few people, when they think about it, blame personal choice as the sole cause of poverty. They understand that the <a href="">quality of local jobs</a>, the <a href="">cost of housing</a>, and <a href="">welfare reforms</a> matter to.</p>
         <section class='space-y-2 mt-5 mb-2'>
           <a class="jrf-button" href='#get-involved'>Get involved</a> 
         </section>
       </section>
     </div>
-    <div class='hidden md:block bg-gray bg-no-repeat bg-cover bg-center' style='background-image: url(/public/images/cover-image.png)'>
+    <div class='hidden md:block bg-no-repeat bg-left' style='background-image: url(/public/images/cover-image.png)'>
     </div>
   </div>
 
@@ -35,6 +35,7 @@
   <div id='summary' class="grid md:grid-template-40x60 min-h-75vh gap-4 p-4">
     <div class='order-last md:order-first'>
       <img src='/public/images/graph.png' />
+      <p class="text-detail">Image source: Department for Communities and Local Government</p>
     </div>
     <div class='order-first md:order-last max-w-xl'>
       <h2 class="govuk-heading-m">
@@ -43,10 +44,10 @@
       <p class="pb-4">Government housing support helps to reduce poverty and its effects, but it is not always enough. Rising housing costs can trap people in poverty, unable to move for work or pay their rent without support.</p>
       <p class="pb-4">To use housing to solve UK poverty we must:</p>
       <ol class="govuk-list govuk-list--number">
-        <li>Increase the housing supply to 200,000 units a year by 2040.</li>
-        <li>Make sure the proportion of social rented housing does not decrease.</li>
+        <li>Increase the <a href="">housing supply</a> to 200,000 units a year by 2040.</li>
+        <li>Make sure the proportion of <a href="">social rented housing</a> does not decrease.</li>
         <li>Stop social rents from rising to match private rents.</li>
-        <li>Bring forward the Renters’ Reform Bill and end No Fault evictions.</li>
+        <li>Bring forward the <a href="">Renters’ Reform Bill</a> and end <a href="">No Fault evictions</a>.</li>
       </ol>
 
       <button class="mt-4 jrf-button">Read all recommendations</button>
@@ -65,10 +66,16 @@
       <p class="govuk-body">Connect, learn and collaborate with people working to achieve housing justice in the UK. Use our network to find tenant unions, think tanks, grassroots campaigners and more.</p>
 
       <div class="govuk-form-group">
-        <label class="govuk-label" for="event-name">
-            Search by postcode
+        <form class='grid md:grid-cols-4 gap-4 text-detail'>
+          <label class='block md:col-span-4'>
+            <div class='text-text mb-2'>Search</div>
+            <input
+              class='border-gray block w-full text-detail bg-right bg-no-repeat' type='search'
+              placeholder='Search by organisation, type or author'
+              style='background-image: url(/public/images/search.png); background-size: 24px; background-position: 99% 50%;'
+            />
           </label>
-        <input class="govuk-input" id="postcode-search" name="postcode-search" type="text">
+        </form>
       </div>
 
       <table class="govuk-table">
@@ -87,12 +94,12 @@
             <td class="govuk-table__cell">Brighton</td>
           </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header"><a href=""></a>Housing Justice</a></th>
+            <th scope="row" class="govuk-table__header"><a href="">Housing Justice</a></th>
             <td class="govuk-table__cell">Charity</td>
             <td class="govuk-table__cell">Manchester</td>
           </tr>
           <tr class="govuk-table__row">
-            <th scope="row" class="govuk-table__header"><a href=""></a>London Renters Union</a></th>
+            <th scope="row" class="govuk-table__header"><a href="">London Renters Union</a></th>
             <td class="govuk-table__cell">Tenent Union</td>
             <td class="govuk-table__cell">Coalition</td>
           </tr>
@@ -156,24 +163,26 @@
             <h3 class="govuk-heading-s m-0">
               Build, build, build social housing
             </h3>
-            <date class='ml-auto pl-3'>6 Aug 2020</date>
+            <date class='ml-auto pl-3 text-detail'>6 Aug 2020</date>
           </header>
           <p class="govuk-body">Building social housing can stimulate our economy and make the housing market work for low-income households. The best thing we can do for our recovery is to make sure we have enough social housing for those who need it most.</p>
         </div>
       </article>
 
-      <article class="bg-greenLight">
+      <a href="collaboration.html">
+        <article class="bg-greenLight hover:bg-green">
         <div class='bg-no-repeat bg-cover bg-center h-33vh' style='min-height: 270px; background-image: url(/public/images/project-2.png)'></div>
         <div class='p-4'>
           <header class='flex flex-row items-baseline mb-4'>
             <h3 class="govuk-heading-s m-0">
               Give Poverty A Voice
             </h3>
-            <date class='ml-auto pl-3'>6 Aug 2020</date>
+            <date class='ml-auto pl-3 text-detail text-text no-underline'>6 Aug 2020</date>
           </header>
           <p class="govuk-body">ATD Fourth World’s Giving Poverty a Voice project strives to support people experiencing poverty and inequality inLondon to engage and participate in their communities and have their say on the decisions that affect their lives. The project also seeks to build networks with grassroots and community.</p>
         </div>
-      </article>
+        </article>
+      </a>
 
       <article class="bg-gray">
         <div class='bg-no-repeat bg-cover bg-center h-33vh' style='min-height: 270px; background-image: url(/public/images/project-3.png)'></div>
@@ -182,7 +191,7 @@
             <h3 class="govuk-heading-s m-0">
               Renters Reform Coalition
             </h3>
-            <date class='ml-auto pl-3'>6 Aug 2020</date>
+            <date class='ml-auto pl-3 text-detail'>6 Aug 2020</date>
           </header>
           <p class="govuk-body">We have joined 19 other charities, think-tanks, housing and renter organisations to form the Renters' Reform Coalition. We are united in our mission to reform the private rented sector so that everyone who relies on it for their home can prosper.</p>
         </div>
@@ -260,13 +269,6 @@
       <caption class="hidden govuk-table__caption govuk-table__caption--m font-normal">
         <h2>All content on Housing</h2>
       </caption>
-      <!-- <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-          <th scope="col" class="govuk-table__header hidden">Title, topic or author</th>
-          <th scope="col" class="govuk-table__header hidden">Content type</th>
-          <th scope="col" class="govuk-table__header hidden">Date</th>
-        </tr>
-      </thead> -->
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row border-t border-borderTable">
           <th scope="row" class="govuk-table__header">UK Poverty 2019/20: Housing</th>
@@ -323,7 +325,7 @@
   </div>
 </div>
 
-<div class='pb-4 ' ></div>
+<div class='pb-4' ></div>
 
 <!-- Team -->
 <div class="md:grid grid-template-40x60 gap-4 p-4">
@@ -333,7 +335,7 @@
     </h2>
     <p class="govuk-body">We are housing and poverty experts. We want to work with action groups and people with lived experience of poverty to learn more and support your work.</p> 
 
-    <p>Talk to us about:</p>
+    <p class="govuk-body">Talk to us about:</p>
 
     <ul class="govuk-list govuk-list--bullet">
       <li>Designing policy recommendations and campaigns </li>
@@ -347,12 +349,12 @@
 
   <div class='bg-blueLight p-4 flex justify-between flex-col'>
     <div class='bg-no-repeat bg-cover bg-center mb-4' style='height: 220px; background-image: url(/public/images/people/crop_rachellepic.png)'></div>
-    <h3 class="govuk-heading-s">Rachelle Earwaker</h3>
-    <p>Economist</p>
-    <p>
+    <h3 class="govuk-heading-s mb-0">Rachelle Earwaker</h3>
+    <p class="govuk-body">Economist</p>
+    <p class="govuk-body">
       My work focuses on decent and affordable housing. I previously worked as an analyst at the New Zealand Treasury, where I coordinated the Budgets. This included implementing the first Wellbeing Budget in 2019.
     </p>
-    <p>Talk to me about:</p>
+    <p class="govuk-body mb-0">Talk to me about:</p>
     <ul class="govuk-list govuk-list--bullet">
       <li>affordable housing</li>
       <li>social housing</li>
@@ -362,12 +364,12 @@
 
   <div class='bg-blueLight p-4 flex justify-between flex-col'>
     <div class='bg-no-repeat bg-cover bg-center mb-4' style='height: 220px; background-image: url("/public/images/people/tony_mckenzie_bw 1.png")'></div>
-    <h3 class="govuk-heading-s">Tony McKenzie</h3>
-    <p>Senior Participation Officer</p>
-    <p>
+    <h3 class="govuk-heading-s mb-0">Tony McKenzie</h3>
+    <p class="govuk-body">Senior Participation Officer</p>
+    <p class="govuk-body">
       I lead on our participatory co-design processes and collaborations. I develop policy solutions with the help of people with direct experience of poverty.
     </p>
-    <p>Talk to me about:</p>
+    <p class="govuk-body mb-0">Talk to me about:</p>
     <ul class="govuk-list govuk-list--bullet">
       <li>citizen science</li>
       <li>co-designing solutions</li>
@@ -378,12 +380,12 @@
 
   <div class='bg-blueLight p-4 flex justify-between flex-col'>
     <div class='bg-no-repeat bg-cover bg-center mb-4' style='height: 220px; background-image: url("/public/images/people/rachel_casey_headshot_6 2.png")'></div>
-    <h3 class="govuk-heading-s">Rachel Casey</h3>
-    <p>Housing Policy Officer</p>
-    <p>
+    <h3 class="govuk-heading-s mb-0 mb-0">Rachel Casey</h3>
+    <p class="govuk-body">Housing Policy Officer</p>
+    <p class="govuk-body">
       I work on development of housing policy at JRF. I develop collaborative solutions and partnerships to ensure more people live in a decent, affordable home.
     </p>
-    <p>Talk to me about:</p>
+    <p class="govuk-body mb-0">Talk to me about:</p>
     <ul class="govuk-list govuk-list--bullet">
       <li>housing policy</li>
       <li>co-design partnerships</li>
@@ -394,12 +396,12 @@
 
   <div class='bg-blueLight p-4 flex justify-between flex-col'>
     <div class='bg-no-repeat bg-cover bg-center mb-4' style='height: 220px; background-image: url(/public/images/people/square_-_darren_baxter_bw.png)'></div>
-    <h3 class="govuk-heading-s">Darren Baxter</h3>
-    <p>Housing Policy Manager</p>
-    <p>
+    <h3 class="govuk-heading-s mb-0">Darren Baxter</h3>
+    <p class="govuk-body">Housing Policy Manager</p>
+    <p class="govuk-body">
       I lead the development of housing policy at JRF. We develop solutions and partnerships to ensure more people live in a decent, affordable home. 
     </p>
-    <p>Talk to me about:</p>
+    <p class="govuk-body mb-0">Talk to me about:</p>
     <ul class="govuk-list govuk-list--bullet">
       <li>housing policy</li>
       <li>partnerships</li>
@@ -410,12 +412,12 @@
 
   <div class='bg-blueLight p-4 flex justify-between flex-col'>
     <div class='bg-no-repeat bg-cover bg-center mb-4' style='height: 220px; background-image: url("/public/images/people/camile_furtado_photo_profile 1.png")'></div>
-    <h3 class="govuk-heading-s">Camille Furtado</h3>
-    <p>UK Poverty Campaigns Manager</p>
-    <p>
+    <h3 class="govuk-heading-s mb-0">Camille Furtado</h3>
+    <p class="govuk-body">UK Poverty Campaigns Manager</p>
+    <p class="govuk-body">
       I lead on our work with people who have direct experience of poverty, from communities across the UK. My role involves strengthening grassroots-led advocacy and campaign work.
     </p>
-    <p>Talk to me about:</p>
+    <p class="govuk-body mb-0">Talk to me about:</p>
     <ul class="govuk-list govuk-list--bullet">
       <li>grassroots-led advocacy</li>
       <li>community organising</li>
