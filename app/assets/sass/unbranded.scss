@@ -59,6 +59,10 @@ html {
   @apply antialiased text-body font-marquis bg-pageWhite;
 }
 
+.govuk-heading-xl {
+  @apply text-xl;
+}
+
 .govuk-heading-xl,
 .govuk-heading-l {
   font-weight: normal !important;
@@ -79,6 +83,10 @@ p {
     @apply text-body;
     word-spacing: 0.05em;
   }
+}
+
+p {
+  @apply max-w-body
 }
 
 p + p {
