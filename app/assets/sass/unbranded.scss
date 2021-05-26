@@ -56,7 +56,8 @@ $govuk-font-family: "MarquisWeb", "HelveticaNeue", "Helvetica Neue", "Arial", "H
 @tailwind utilities;
 
 body,
-html {
+html,
+.govuk-template__body {
   @apply antialiased text-body font-marquis bg-pageWhite;
 }
 
