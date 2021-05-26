@@ -45,6 +45,7 @@ module.exports = {
       colors: {
         text: "#222222",
         border: "#2F3130",
+        borderTable: "#b1b4b6",
         gray: '#E1E1E1',
         pageWhite: '#FAFAFA',
         green: "#BEC4A0",
@@ -83,5 +84,8 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+  ],
 }

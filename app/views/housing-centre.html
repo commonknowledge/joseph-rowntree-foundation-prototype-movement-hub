@@ -11,7 +11,7 @@
 
 <!-- Header -->
   <div class="px-4 md:grid grid-template-40x60 gap-4">
-    <div class="flex flex-col min-h-75vh w-100 pb-4">
+    <div class="flex flex-col min-h-75vh w-full pb-4">
       <div class='py-4'>
         <img src='/public/images/jrf.png' style='height: 30px' />
       </div>
@@ -57,8 +57,8 @@
   <div class='border-b border-border'></div>
 
 <!-- Network -->
-  <div id='network' class="md:grid grid-template-40x60 min-h-75vh gap-4">
-    <div class='py-4 px-4'>
+  <div id='network' class="grid lg:grid-template-40x60 min-h-75vh gap-4">
+    <div class='p-4 md:pr-0'>
       <h2 class="govuk-heading-m">
         Network
       </h2>
@@ -101,12 +101,38 @@
 
       <button class="jrf-button">Explore the network</button> 
     </div>
-    <div
-      class="bg-blueBright bg-no-repeat bg-cover bg-center"
-      style='background-image: url(/public/images/map.png)'>
+    <div>
+      <div class="min-h-75vh" id='map'></div>
+      <div class='bg-blueLight text-blueBright p-2 text-detail text-center'>Hold the control key whilst scrolling to zoom</div>
     </div>
   </div>
 
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY29tbW9ua25vd2xlZGdlIiwiYSI6ImNqc3Z3NGZxcDA4NGo0OXA2dzd5eDJvc2YifQ.f68VZ1vlc6s3jg3JgShd0A';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/commonknowledge/ckp5d136u0k7u18p9h2cgv9jk'
+    }); 
+
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+
+    // Zoom with ctrl button
+    map.scrollZoom.disable();
+    map.scrollZoom.setWheelZoomRate(0.02); // Default 1/450
+
+    map.on("wheel", event => {
+      if (event.originalEvent.ctrlKey) { // Check if CTRL key is pressed
+        event.originalEvent.preventDefault(); // Prevent chrome/firefox default behavior
+        if (!map.scrollZoom._enabled) map.scrollZoom.enable(); // Enable zoom only if it's disabled
+      } else {
+        if (map.scrollZoom._enabled) map.scrollZoom.disable(); // Disable zoom only if it's enabled
+      }
+    });
+  </script>
+  
   <div class='border-b border-border' ></div>
 
 <!-- Projects -->
@@ -197,19 +223,52 @@
 <!-- All content -->
 <div class="min-h-75vh gap-4 p-4 border-b border-border">
   <div>
+    <h2 class="govuk-heading-m mb-4">
+      All content on Housing
+    </h2>
+    <form class='grid md:grid-cols-4 gap-4 text-detail'>
+      <label class='block md:col-span-2'>
+        <div class='text-text text-opacity-70 mb-2'>Search</div>
+        <input
+          class='border-gray block w-full text-detail bg-right bg-no-repeat' type='search'
+          placeholder='Search by title, topic or author'
+          style='background-image: url(/public/images/search.png); background-size: 24px; background-position: 99% 50%;'
+        />
+      </label>
+      <label class='block'>
+        <div class='text-text text-opacity-70 mb-2'>Filter by</div>
+        <select class='border-gray w-full block text-detail text-text text-opacity-70'>
+          <option disabled selected>Content type</option>
+          <option>Dataset</option>
+          <option>Report</option>
+          <option>Resource</option>
+          <option>Story</option>
+        </select>
+      </label>
+      <label class='block'>
+        <div class='text-text text-opacity-70 mb-2'>Sort by</div>
+        <select class='border-gray w-full block text-detail text-text text-opacity-70'>
+          <option disabled selected>Date</option>
+          <option>Date</option>
+          <option>Content Type</option>
+          <option>Title</option>
+        </select>
+      </label>
+    </form> 
+    <div class='pb-4'></div>
     <table class="govuk-table">
-      <caption class="govuk-table__caption govuk-table__caption--m font-normal">
+      <caption class="hidden govuk-table__caption govuk-table__caption--m font-normal">
         <h2>All content on Housing</h2>
       </caption>
-      <thead class="govuk-table__head">
+      <!-- <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th scope="col" class="govuk-table__header hidden">Title, topic or author</th>
           <th scope="col" class="govuk-table__header hidden">Content type</th>
           <th scope="col" class="govuk-table__header hidden">Date</th>
         </tr>
-      </thead>
+      </thead> -->
       <tbody class="govuk-table__body">
-        <tr class="govuk-table__row">
+        <tr class="govuk-table__row border-t border-borderTable">
           <th scope="row" class="govuk-table__header">UK Poverty 2019/20: Housing</th>
           <td class="govuk-table__cell">Report</td>
           <td class="govuk-table__cell">13 May 2021</td>
