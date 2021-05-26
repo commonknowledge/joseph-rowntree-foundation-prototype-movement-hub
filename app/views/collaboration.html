@@ -1,0 +1,115 @@
+
+{% extends "layout_unbranded.html" %}
+{% from "govuk/components/tag/macro.njk"                 import govukTag %}
+
+{% block pageTitle %}
+  JRF Prototype
+{% endblock %}
+
+{% block content %}
+<div class='overflow-x-hidden'>
+
+<!-- Header -->
+  <div class="px-4 md:grid grid-template-40x60 gap-4">
+    <div class="flex flex-col min-h-75vh w-100 pb-4">
+      <div class='py-4'>
+        <img src='/public/images/jrf.png' style='height: 30px' />
+      </div>
+      <div class="flex-grow flex items-center text-center justify-center align-middle">
+        <h1 class='inline-block block govuk-heading-xl my-6'>Give poverty a voice</h1>
+      </div>
+      <section class='mt-auto'>
+        <p class="">This project, initiated by <a href="https://atd-uk.org/">ATD Fourth World</a>, strives to support people experiencing poverty and inequality in London to engage and participate in their communities and have their say on the decisions that affect their lives.</p>
+      </section>
+    </div>
+    <div class='hidden md:block bg-no-repeat bg-left' style='background-image: url(/public/images/collab-cover-image.jpg)'>
+    </div>
+  </div>
+
+  <div class='border-t border-border' ></div>
+
+<!-- Summary -->
+  <div id='summary' class="grid md:grid-template-40x60 min-h-75vh gap-4 p-4">
+    <div class='order-last md:order-first mt-6'>
+      <p class="bg-yellowLight p-4">“Poverty destroys people, but having a space where people with an experience of poverty can speak out shows all kinds of wealth, ideas and expertise which are not at all recognised by society.”</p>
+    </div>
+    <div class='order-first md:order-last max-w-xl'>
+      <h2 class="govuk-heading-m">
+        Our plan to win
+      </h2>
+      <p class="pb-4">Using issue-based discussion forums, capacity-building workshops and examinations of the different opportunities and avenues to participate in the democratic process, our aim is for Giving Poverty a Voice to empower and encourage people to stand up and be heard.</p>
+      <p class="pb-4">The project also seeks to build networks with grassroots and community organisations across the borough and the capital to strengthen the links between diverse experiences and perceptions of poverty as well as planning meetings with local and regional policy and decision makers.</p>
+      
+      <button class="mt-4 jrf-button">Visit ATD website</button>
+    </div>
+  </div>
+
+  <div class='border-b border-border'></div>
+
+<!-- Get involved -->
+<div id='get-involved' class="md:grid md:grid-cols-2 min-h-75vh gap-4 p-4 border-b border-border">
+  <div>
+    <h2 class="govuk-heading-m">
+      Get involved
+    </h2>
+    <p class="govuk-body">Achieving housing justice and ending poverty is possible. Take action to keep learning, stay updated and build connections.</p> 
+  </div>
+  <div class='space-y-4 mr-4'>
+    <div class='bg-blueLight p-4'>
+      <a class="govuk-heading-s underline">Join the online community</a>
+      <p class="govuk-body">Get advice, share information, and find solutions. Meet other people who are solving poverty through housing.</p>
+    </div>
+    
+    <div class='bg-blueLight p-4'>
+      <a class="govuk-heading-s underline">Work with us</a>
+      <p class="govuk-body">Build on our joint experience and expertise. We can support you to do more.</p>
+    </div>
+
+    <div class='bg-blueLight p-4'>
+      <a class="govuk-heading-s underline">Sign up to the newsletter</a>
+      <p class="govuk-body">Stay up to date on the latest research, partner stories, events and training.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Campaign news -->
+
+<div id='projects' class="md:grid grid-template-40x60 gap-4 p-4">
+  <h2 class="govuk-heading-m mb-0">
+    Campaign news
+  </h2>
+</div>
+
+<div>
+  <div class='px-4 grid md:grid-cols-2 lg:grid-cols-2 gap-4'>
+    <article>
+      <div class='bg-no-repeat bg-cover bg-center h-33vh' style='min-height: 400px; background-image: url(/public/images/collab-1.jpg)'></div>
+      <div class='p-2'>
+        <header class='flex flex-row items-baseline mb-4'>
+          <h3 class="govuk-heading-s m-0">
+            Bringing experts on poverty together
+          </h3>
+          <date class='ml-auto pl-3 text-detail'>6 Aug 2020</date>
+        </header>
+        <p class="govuk-body">The Joseph Roundtree Foundation invited ATD Fourth World’s #PovertyExperts to York to run a workshop on participation and ownership. All the facilitators had direct experience of poverty. A panel of four Poverty Experts led group exercises, conversations, and presentations.</p>
+      </div>
+    </article>
+
+    <article>
+      <div class='bg-no-repeat bg-cover bg-center h-33vh' style='min-height: 400px; background-image: url(/public/images/collab-2.jpg)'></div>
+      <div class='p-2'>
+        <header class='flex flex-row items-baseline mb-4'>
+          <h3 class="govuk-heading-s m-0">
+            Artur and Aida's story
+          </h3>
+          <date class='ml-auto pl-3 text-detail'>6 Aug 2020</date>
+        </header>
+        <p class="govuk-body">Artur and Aida are a couple originally from Albania now living in London with three young children. They explain that the Covid-19 lockdown has caused upheaval in their family.</p>
+      </div>
+    </article>
+  </div>
+</div>
+
+<div class='mt-4 border-b border-border' ></div>
+
+{% endblock %}
