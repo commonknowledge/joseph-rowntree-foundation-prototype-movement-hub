@@ -25,7 +25,7 @@
         </section>
       </section>
     </div>
-    <div class='hidden md:block bg-gray bg-no-repeat bg-cover bg-center' style='background-image: url(/public/images/cover-image.png)'>
+    <div class='hidden md:block bg-no-repeat bg-left' style='background-image: url(/public/images/cover-image.png)'>
     </div>
   </div>
 
@@ -65,10 +65,16 @@
       <p class="govuk-body">Connect, learn and collaborate with people working to achieve housing justice in the UK. Use our network to find tenant unions, think tanks, grassroots campaigners and more.</p>
 
       <div class="govuk-form-group">
-        <label class="govuk-label" for="event-name">
-            Search by postcode
+        <form class='grid md:grid-cols-4 gap-4 text-detail'>
+          <label class='block md:col-span-4'>
+            <div class='text-text mb-2'>Search</div>
+            <input
+              class='border-gray block w-full text-detail bg-right bg-no-repeat' type='search'
+              placeholder='Search by organisation, type or location'
+              style='background-image: url(/public/images/search.png); background-size: 24px; background-position: 99% 50%;'
+            />
           </label>
-        <input class="govuk-input" id="postcode-search" name="postcode-search" type="text">
+        </form>
       </div>
 
       <table class="govuk-table">
@@ -156,24 +162,26 @@
             <h3 class="govuk-heading-s m-0">
               Build, build, build social housing
             </h3>
-            <date class='ml-auto pl-3'>6 Aug 2020</date>
+            <date class='ml-auto pl-3 text-detail'>6 Aug 2020</date>
           </header>
           <p class="govuk-body">Building social housing can stimulate our economy and make the housing market work for low-income households. The best thing we can do for our recovery is to make sure we have enough social housing for those who need it most.</p>
         </div>
       </article>
 
-      <article class="bg-greenLight">
+      <a href="collaboration.html">
+        <article class="bg-greenLight hover:bg-green">
         <div class='bg-no-repeat bg-cover bg-center h-33vh' style='min-height: 270px; background-image: url(/public/images/project-2.png)'></div>
         <div class='p-4'>
           <header class='flex flex-row items-baseline mb-4'>
             <h3 class="govuk-heading-s m-0">
               Give Poverty A Voice
             </h3>
-            <date class='ml-auto pl-3'>6 Aug 2020</date>
+            <date class='ml-auto pl-3 text-detail text-text no-underline'>6 Aug 2020</date>
           </header>
           <p class="govuk-body">ATD Fourth World’s Giving Poverty a Voice project strives to support people experiencing poverty and inequality inLondon to engage and participate in their communities and have their say on the decisions that affect their lives. The project also seeks to build networks with grassroots and community.</p>
         </div>
-      </article>
+        </article>
+      </a>
 
       <article class="bg-gray">
         <div class='bg-no-repeat bg-cover bg-center h-33vh' style='min-height: 270px; background-image: url(/public/images/project-3.png)'></div>
@@ -182,7 +190,7 @@
             <h3 class="govuk-heading-s m-0">
               Renters Reform Coalition
             </h3>
-            <date class='ml-auto pl-3'>6 Aug 2020</date>
+            <date class='ml-auto pl-3 text-detail'>6 Aug 2020</date>
           </header>
           <p class="govuk-body">We have joined 19 other charities, think-tanks, housing and renter organisations to form the Renters' Reform Coalition. We are united in our mission to reform the private rented sector so that everyone who relies on it for their home can prosper.</p>
         </div>
@@ -260,13 +268,6 @@
       <caption class="hidden govuk-table__caption govuk-table__caption--m font-normal">
         <h2>All content on Housing</h2>
       </caption>
-      <!-- <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-          <th scope="col" class="govuk-table__header hidden">Title, topic or author</th>
-          <th scope="col" class="govuk-table__header hidden">Content type</th>
-          <th scope="col" class="govuk-table__header hidden">Date</th>
-        </tr>
-      </thead> -->
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row border-t border-borderTable">
           <th scope="row" class="govuk-table__header">UK Poverty 2019/20: Housing</th>
