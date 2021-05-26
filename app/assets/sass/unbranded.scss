@@ -65,7 +65,8 @@ html {
 }
 
 .govuk-heading-xl,
-.govuk-heading-l {
+.govuk-heading-l,
+.govuk-heading-s {
   font-weight: normal !important;
 }
 
@@ -113,6 +114,9 @@ p + .govuk-list {
       grid-template-columns: 0.4fr 0.6fr;
     }
     .grid-template-40 {
+      grid-template-columns: 0.4fr 0.4fr 0.2fr;
+    }
+    .grid-template-40-flow {
       grid-template-columns: 0.4fr 0.4fr 0.4fr;
     }
   }
