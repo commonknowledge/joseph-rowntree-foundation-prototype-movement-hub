@@ -13,15 +13,15 @@
   <div class="px-4 md:grid grid-template-40x60 gap-4">
     <div class="flex flex-col min-h-75vh w-100 pb-4">
       <div class='py-4'>
-        <img src='/public/images/jrf.png' />
+        <img src='/public/images/jrf.png' style='height: 30px' />
       </div>
       <div class="flex-grow flex items-center text-center justify-center align-middle">
         <h1 class='inline-block block govuk-heading-xl my-6'>Housing and poverty</h1>
       </div>
       <section class='mt-auto'>
         <p class="">Rises in housing have increased the cost of living, particularly for people in poverty. Few people, when they think about it, blame personal choice as the sole cause of poverty. They understand that the quality of local jobs, the cost of housing, and welfare reforms matter too.</p>
-        <section class='space-y-2 mt-5'>
-          <button class="jrf-button">Get involved</button> 
+        <section class='space-y-2 mt-5 mb-2'>
+          <a class="jrf-button" href='#get-involved'>Get involved</a> 
         </section>
       </section>
     </div>
@@ -121,9 +121,9 @@
       <button class="jrf-button">View more projects</button>
     </div>
   </div>
-  <div class="overflow-x-auto overflow-y-hidden">
-    <div class='px-4 grid grid-template-40-flow gap-4' style='min-width: calc((40% + 10px) * 3)'>
-      <article class="bg-yellow" style='min-width: 300px'>
+  <div>
+    <div class='px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
+      <article class="bg-yellow">
         <div class='bg-no-repeat bg-cover bg-center h-33vh' style='min-height: 270px; background-image: url(/public/images/project-1.png)'></div>
         <div class='p-4'>
           <header class='flex flex-row items-baseline mb-4'>
@@ -136,7 +136,7 @@
         </div>
       </article>
 
-      <article class="bg-greenLight" style='min-width: 300px'>
+      <article class="bg-greenLight">
         <div class='bg-no-repeat bg-cover bg-center h-33vh' style='min-height: 270px; background-image: url(/public/images/project-2.png)'></div>
         <div class='p-4'>
           <header class='flex flex-row items-baseline mb-4'>
@@ -149,7 +149,7 @@
         </div>
       </article>
 
-      <article class="bg-gray" style='min-width: 300px'>
+      <article class="bg-gray">
         <div class='bg-no-repeat bg-cover bg-center h-33vh' style='min-height: 270px; background-image: url(/public/images/project-3.png)'></div>
         <div class='p-4'>
           <header class='flex flex-row items-baseline mb-4'>
@@ -167,7 +167,7 @@
   <div class='mt-4 border-b border-border' ></div>
 
 <!-- Get involved -->
-<div id='get-involved' class="md:grid grid-template-40 min-h-75vh gap-4 p-4 border-b border-border">
+<div id='get-involved' class="md:grid md:grid-cols-2 min-h-75vh gap-4 p-4 border-b border-border">
   <div>
     <h2 class="govuk-heading-m">
       Get involved
