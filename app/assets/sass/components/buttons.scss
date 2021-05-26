@@ -1,0 +1,27 @@
+.jrf-button {
+  @apply text-blueBright bg-blueLight;
+  padding: 8px 10px 7px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+
+  &:hover {
+    @apply text-pageWhite bg-blueBright;
+  }
+}
+
+.jrf-button-secondary {
+  @apply text-blueBright bg-pageWhite;
+  padding: 8px 10px 7px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+
+  &:hover {
+    @apply text-pageWhite bg-blueBright;
+  }
+}
