@@ -60,9 +60,41 @@ html {
   @apply antialiased text-body font-marquis bg-pageWhite;
 }
 
+.govuk-heading-xl {
+  @apply text-xl;
+}
+
 .govuk-heading-xl,
 .govuk-heading-l {
   font-weight: normal !important;
+}
+
+// body,
+// html,
+.govuk-body-m,
+.govuk-body,
+.govuk-list,
+.govuk-table,
+p {
+  font-size: 16px;
+  line-height: 24px;
+  word-spacing: 0.05em;
+
+  @screen md {
+    @apply text-body;
+    word-spacing: 0.05em;
+  }
+}
+
+p {
+  @apply max-w-body
+}
+
+p + p {
+  @apply mt-3
+}
+p + .govuk-list {
+  @apply mt-2
 }
 
 .govuk-main-wrapper {
@@ -78,7 +110,10 @@ html {
 @layer components {
   @responsive {
     .grid-template-40x60 {
-      grid-template-columns: 40% 60%;
+      grid-template-columns: 0.4fr 0.6fr;
+    }
+    .grid-template-40 {
+      grid-template-columns: 0.4fr 0.4fr 0.4fr;
     }
   }
 }

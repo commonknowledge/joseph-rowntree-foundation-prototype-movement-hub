@@ -18,10 +18,10 @@ module.exports = {
       //   letterSpacing: 0,
       //   lineHeight: '1.25',
       // }],
-      // 'heading': ['4.8vw', {
-      //   letterSpacing: '-0.0025em',
-      //   lineHeight: 1.15,
-      // }],
+      'xl': ['4.8vw', {
+        letterSpacing: '-0.0025em',
+        lineHeight: 1.15,
+      }],
       // Or with a default line-height as well
       // 'body-mobile': ['16px', {
       //   letterSpacing: 0,
@@ -29,6 +29,16 @@ module.exports = {
       // }],
       'body': ['20px', {
         lineHeight: '28px',
+      }],
+      'detail-mobile': ['14px', {
+        lineHeight: '18px',
+      }],
+      'detail': ['15px', {
+        lineHeight: '20px',
+      }],
+      'interface': ['13px', {
+        lineHeight: '16px',
+        letterSpacing: '0.05em',
       }],
     },
     extend: {
@@ -62,6 +72,12 @@ module.exports = {
       },
       minHeight: {
         '75vh': '75vh'
+      },
+      maxWidth: {
+        headline: '20em',
+        body: '40em',
+        detail: '18em',
+        interface: '23em'
       }
     },
   },
