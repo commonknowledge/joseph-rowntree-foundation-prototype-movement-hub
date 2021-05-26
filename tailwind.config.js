@@ -56,7 +56,8 @@ module.exports = {
         redLight: "#F2B7B1",
         blue: "#2C2264",
         blueLight: "#DAD6F0",
-        blueBright: "#2F18B4"
+        blueBright: "#2F18B4",
+        transparent: 'transparent'
       },
       spacing: {
         0: '0px',
