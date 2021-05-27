@@ -6,27 +6,27 @@ a {
   text-decoration-thickness: 0.5px;
 }
 a:hover {
-  color: theme('colors.blueLight');
+  color: theme('colors.blue');
   text-decoration: underline;
-  text-decoration-color: theme('colors.blueLight');
+  text-decoration-color: theme('colors.blue');
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
 }
 a:focus {
-  color: theme('colors.yellowLight'); 
-  background: theme('colors.blueLight'); 
-  outline: 0.3em solid theme('colors.blueLight');
+  color: theme('colors.yellow');
+  background: theme('colors.blue');
+  outline: 0.3em solid theme('colors.blue');
   text-decoration: underline;
-  text-decoration-color: theme('colors.yellowLight');
+  text-decoration-color: theme('colors.yellow');
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
 } 
 a:active {
-  color: theme('colors.blueLight');         
+  color: theme('colors.blue');         
   background: theme('colors.yellowLight');
   outline: 0.3em solid theme('colors.yellowLight'); 
   text-decoration: underline; 
-  text-decoration-color: theme('colors.blueLight'); 
+  text-decoration-color: theme('colors.blue'); 
   text-underline-offset: 0.2em; 
   text-decoration-thickness: 1px; 
 } 
