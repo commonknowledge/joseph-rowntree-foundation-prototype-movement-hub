@@ -29,9 +29,6 @@
 @import "node_modules/govuk-frontend/govuk/settings/typography-font";
 @import "node_modules/govuk-frontend/govuk/settings/typography-responsive";
 
-@import "./components/links";
-@import "./components/buttons";
-
 // Override the default GOV.UK Frontend font stack
 @font-face {
   font-family: "MarquisWeb";
@@ -54,6 +51,9 @@ $govuk-font-family: "MarquisWeb", "HelveticaNeue", "Helvetica Neue", "Arial", "H
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "./components/links";
+@import "./components/buttons";
 
 body,
 html,

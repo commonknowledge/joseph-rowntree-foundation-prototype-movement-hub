@@ -73,7 +73,8 @@ module.exports = {
         '60p': '60%',
       },
       minHeight: {
-        '75vh': '75vh'
+        '75vh': '75vh',
+        'none': 'none'
       },
       maxWidth: {
         headline: '20em',
