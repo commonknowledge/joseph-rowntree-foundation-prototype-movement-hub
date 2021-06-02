@@ -58,7 +58,11 @@ $govuk-font-family: "MarquisWeb", "HelveticaNeue", "Helvetica Neue", "Arial", "H
 body,
 html,
 .govuk-template__body {
-  @apply antialiased text-body font-marquis bg-pageWhite;
+  @apply antialiased text-body font-marquis;
+}
+
+.govuk-template {
+  background-color: white;
 }
 
 .govuk-heading-xl {
